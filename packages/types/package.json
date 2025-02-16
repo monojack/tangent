@@ -1,0 +1,16 @@
+{
+  "name": "@repo/types",
+  "version": "0.0.0",
+  "private": true,
+  "types": "index.ts",
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "default": "./index.ts"
+    },
+    "./enums": {
+      "types": "./enums.ts",
+      "default": "./enums.ts"
+    }
+  }
+}

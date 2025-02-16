@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+@import './theme.css';
+
+:root {
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  @apply bg-light-background text-light-foreground dark:bg-dark-background dark:text-dark-foreground;
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
